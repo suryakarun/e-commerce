@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <style>
+            
+            .logo{
+                width: 100px;
+                height: 100px;
+            }
+            #header{
+                background-color: rgb(196, 181, 181);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px 80px;
+                box-shadow: 0 5px 15px ghostwhite;
+            }
+            #navbar{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            #navbar li{
+                list-style: none;
+                padding: 0px 20px;
+            }
+            #navbar li a{
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: 600;
+                color: black;
+                transition: 0.3s ease;
+            }
+            #navbar li a:hover{
+                color: gray;
+            }
+            #contact{
+                margin: 10px;
+            }
+            h1{
+                font-weight: bolder;
+                font-size:50px;
+            }
+            h4{
+                font-size: 30px;
+            }
+            p{
+              font-size: 20px;  
+              font-weight: lighter;
+            }
+    
+            .map{
+                 margin-left: 800px;
+                 margin-top: -500px;
+            }
+            .footer
+            {
+                padding: 50px;
+                background-color:rgb(196, 181, 181);
+                font-size: medium;
+                color: black;
+            }
+            #newsletter{
+              height:170px;
+              background-color:rgb(196, 181, 181);
+              padding: 50px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-top: 200px;
+            }
+            #newsletter .letter{
+              margin: 200px;
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+              font-weight: bolder;
+              font-size: 20px;
+            }
+            #newsletter input{
+              border-style: none;
+              border-radius: 5px;
+              padding-right: 70px;
+              padding: 10px;
+              margin: 20px;
+            }
+            #newsletter button{
+              border-radius: 10px;
+              padding: 10px;
+              background-color: bisque;
+              border-style: none;
+            }
+    </style>
+    <body>
+        <section id="header">
+            <img class="logo" src="./images/fashion-model-silhouette-fashion-illustration-removebg-preview.png">
+            <div>
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+                        <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+                      </svg></a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact">
+        <h1>Contact</h1><br>
+        <h4>Address
+        
+           <p>160 Pennsylvania Ave NW, Washington, Castle, PA 16101-5161</p>
+        </h4>
+        <h4>Phone
+        
+        <p>125-711-811125-668-886</p>
+        </h4>
+        <h4>Support
+        
+        <p>Support.photography@gmail.com</p>
+        </h4>
+        </section>
+        <div class="col-lg-6 col-md-6">
+            <div class="map">
+                <a href="https://maps.app.goo.gl/SuJXdZ7aJ5AqXJyE8">
+            <img src="./images/WhatsApp Image 2024-09-12 at 13.24.25_ce60ab11.jpg" height="500" width="500px" style="border:0" allowfullscreen="">
+                </a>         
+            </div>
+            </div>
+            <section id="newsletter">
+                <div class="letter">
+                  <h1>Sign Up For Newsletters</h1>
+                  <p>Get E-Mail Update About The New Collections</p>
+                </div>
+                  <input type="text" placeholder="Enter Your E-Mail">
+                  <button>Sign In</button>
+              </section>
+    </body>
+</html>
