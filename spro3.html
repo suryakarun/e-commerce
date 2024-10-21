@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <style>
+         .logo{
+                width: 100px;
+                height: 100px;
+            }
+            #header{
+                background-color: rgb(196, 181, 181);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px 80px;
+                box-shadow: 0 5px 15px ghostwhite;
+            }
+            #navbar{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            #navbar li{
+                list-style: none;
+                padding: 0px 20px;
+            }
+            #navbar li a{
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: 600;
+                color: black;
+                transition: 0.3s ease;
+            }
+            #navbar li a:hover{
+                color: gray;
+            }
+            #prodetails .single-pro-image{
+                width: 40%;
+                margin-right: 50px;
+            }
+            .small-img-group{
+                display: flex;
+                justify-content: space-between;
+            }
+            .small-img-col{
+                flex-basis: 24%;
+            }
+            #prodetails{
+                width: 900px;
+                height: 1200px;
+                margin-left: 200px;
+                display: flex;
+                margin-top:20px;
+            }
+            #prodetails .single-pro-details{
+                width: 50%;
+                padding-top: 30px;
+            }
+            
+            #prodetails .single-pro-details h2{
+                font-size: 26px;
+            }
+            #prodetails .single-pro-details h6{
+                font-weight: bolder;
+                font-size: 20px;
+                margin-bottom: -10px;
+            } #prodetails .single-pro-details p{
+                font-size: large;
+                width: 900px;
+            }
+            #prodetails .single-pro-details select{
+                display: block;
+                padding: 5px 10px;
+                margin-bottom: 10px;
+            }
+            #prodetails .single-pro-details input{
+                width: 50px;
+                height: 47px;
+                padding-left: 10px;
+                font-size: 16px;
+                margin-right: 10px;
+            }
+            #prodetails .single-pro-details input:focus{
+                outline: none;
+            }
+            #prodetails .single-pro-details button{
+                background:rgb(35, 147, 10);
+                padding: 5px;
+                border-radius: 5px;
+                border-style: none;
+            }
+            #prodetails .single-pro-details span{
+                line-height: 25px;
+            }
+         
+            .footer
+            {
+                padding: 50px;
+                background-color:rgb(196, 181, 181);
+                font-size: medium;
+                color: black;
+            }
+            #newsletter{
+              height:200px;
+              background-color:rgb(196, 181, 181);
+              padding: 50px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            #newsletter .letter{
+              margin: 200px;
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+              font-weight: bolder;
+              font-size: 20px;
+            }
+            #newsletter input{
+              border-style: none;
+              border-radius: 5px;
+              padding-right: 70px;
+              padding: 10px;
+              margin: 20px;
+            }
+            #newsletter button{
+              border-radius: 10px;
+              padding: 10px;
+              background-color: bisque;
+              border-style: none;
+            }
+
+
+
+
+
+    </style>
+    <body>
+        <section id="header">
+            <img class="logo" src="./images/fashion-model-silhouette-fashion-illustration-removebg-preview.png">
+            <div>
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+                        <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+                      </svg></a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="prodetails">
+            <div class="single-pro-image">
+                <img src="images/pnnk f.jpg" width="100%" id="MainImg">
+                <div class="small-img-group">
+                    <div class="small-img-col">
+                        <img src="./images/pink f 1.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="./images/pnnk f.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="./images/pink f2.jpg" width="100%" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="single-pro-details">
+                <h6>Home / dress </h6>
+                <h4>Womens Fashion Dress</h4>
+                <h2>$25.00</h2>
+                <select>
+                    <option>Select Size</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                    <option>Small</option>
+                    <option>Large</option>
+                </select>
+                <input type="number" value="1">
+                <button class="normal">Add To Cart</button>
+                <h4>Product Details</h4>
+                <span>Material type : Rayon<br>
+                    Length : Above the Knee<br>
+                    Occasion type : Party, Christmas, Birthday<br>
+                    Sleeve type : Long Sleeve<br>
+                    Pattern : Paisley<br>
+                    Style : DRESS</span>
+                </h4>
+                <p><h4>About this item<br><br></h4>
+                    The fashion-forward girls with our collection of dresses for girls and Western dresses for girls. Crafted with the same attention to detail and style as our women's line, these dresses are perfect for young fashion enthusiasts who want to make a statement. Our stylish dresses for women and stylish dresses for girls feature the latest trends, incorporating unique designs and patterns. Whether it's bold prints or intricate details, we offer a wide range of options to suit every taste. To complete our collection, we present our one-piece dresses for women, ideal for those seeking a hassle-free outfit with maximum impact. Made with rayon fabric, these dresses offer superior comfort while showcasing a stunning paisley print. The combination of style and comfort makes our one-piece dresses a wardrobe staple for any fashion-conscious woman. Explore our range of Western Dresses for Women, including short dresses, fit & flare mini dresses, A-line dresses, and stylish options for girls. Each piece is meticulously crafted to elevate your style and enhance your confidence. Discover the perfect dress that reflects your personality and makes a lasting impression. we have a wide range of options to suit every occasion. Our women's dresses are designed with meticulous attention to detail, ensuring a perfect fit and flattering silhouette.
+            </div>
+        </section>
+           
+        <section id="newsletter">
+            <div class="letter">
+              <h1>Sign Up For Newsletters</h1>
+              <p>Get E-Mail Update About The New Collections</p>
+            </div>
+              <input type="text" placeholder="Enter Your E-Mail">
+              <button>Sign In</button>
+          </section>
+          <audio controls autoplay>
+            <source src="./audio/way-home-simple-positive-acoustic-background-music-197756.mp3" type="audio/ogg">
+          </audio>
+          <script>
+            var MainImg=document.getElementById("MainImg");
+            var smallimg=document.getElementsByClassName("small-img");
+
+            smallimg[0].onclick=function(){
+                MainImg.src = smallimg[0].src;
+            }
+            smallimg[1].onclick=function(){
+                MainImg.src = smallimg[1].src;
+            }
+            smallimg[2].onclick=function(){
+                MainImg.src = smallimg[2].src;
+            }
+          </script>
+        </body>
+</html>
